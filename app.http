@@ -1,0 +1,39 @@
+###RECUPERAR TODAS LAS PELICULAS
+
+GET http://localhost:1233/movies
+
+###RECUPERAR 1 PELICULA
+
+GET http://localhost:1233/movies/c906673b-3948-4402-ac7f-73ac3a9e3105
+
+
+###RECUPERAR TODAS LAS PELICULAS DE 1 GENERO
+
+http://localhost:1233/movies?genre=ACTIon
+
+
+####CREAR 1 PELICULA
+
+POST http://localhost:1233/movies
+Content-Type: application/json
+
+  {
+    "title": "Avatar",
+    "year": 2009,
+    "director": "James Cameron",
+    "duration": 162,
+    "poster": "https://i.etsystatic.com/35681979/r/il/dfe3ba/3957859451/il_fullxfull.3957859451_h27r.jpg",
+    "genre": ["Action", "Adventure", "Fantasy", "Crime"],
+    "rate": 5,
+    "caca": "cacona"
+  }
+
+
+###ACTUALIZAR UNA PARTE DE LA PELICULA
+PATCH http://localhost:1233/movies/c906673b-3948-4402-ac7f-73ac3a9e3105
+Content-Type: application/json
+
+  {
+    "year": "1923",
+    "director": 23,
+  }
