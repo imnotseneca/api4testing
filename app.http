@@ -30,10 +30,14 @@ Content-Type: application/json
 
 
 ###ACTUALIZAR UNA PARTE DE LA PELICULA
-PATCH http://localhost:1233/movies/c906673b-3948-4402-ac7f-73ac3a9e3105
+PATCH http://localhost:1233/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
 Content-Type: application/json
 
   {
-    "year": "1923",
-    "director": 23,
+    "year": 1923,
   }
+
+###
+
+
+DELETE http://localhost:1233/movies/c906673b-3948-4402-ac7f-73ac3a9e3105
